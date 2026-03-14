@@ -25,6 +25,12 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
           rel="stylesheet"
         />
+        {/* Umami Analytics — replace data-website-id with your ID from umami.is */}
+        <script
+          async
+          src="https://analytics.umami.is/script.js"
+          data-website-id="7cb317d4-fbaa-4f85-a82e-ed5da760fe0e"
+        />
       </head>
       <body className="antialiased">{children}</body>
     </html>
