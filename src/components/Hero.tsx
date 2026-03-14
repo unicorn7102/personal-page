@@ -6,7 +6,7 @@ export function Hero() {
           Hello, world. I&apos;m
         </p>
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 dark:text-gray-100 mb-6">
-          Your Name
+          HE Mengfei
         </h1>
         <p className="text-xl md:text-2xl text-gray-500 dark:text-gray-400 max-w-xl mx-auto mb-10 leading-relaxed">
           Full-stack developer building thoughtful digital experiences.

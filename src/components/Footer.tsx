@@ -3,7 +3,7 @@ export function Footer() {
   return (
     <footer className="py-8 px-6 border-t border-gray-100 dark:border-gray-800">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400 dark:text-gray-500">
-        <p>© {year} Your Name. All rights reserved.</p>
+        <p>© {year} HE Mengfei. All rights reserved.</p>
         <p className="font-mono text-xs">
           Built with{" "}
           <a

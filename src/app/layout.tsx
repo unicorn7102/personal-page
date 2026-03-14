@@ -13,11 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name — Personal Page",
-  description: "Personal page of Your Name — developer, creator, thinker.",
+  title: "HE Mengfei — Personal Page",
+  description: "Personal page of HE Mengfei — developer, creator, thinker.",
   openGraph: {
-    title: "Your Name — Personal Page",
-    description: "Personal page of Your Name — developer, creator, thinker.",
+    title: "HE Mengfei — Personal Page",
+    description: "Personal page of HE Mengfei — developer, creator, thinker.",
     type: "website",
   },
 };
