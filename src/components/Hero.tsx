@@ -1,47 +1,42 @@
 export function Hero() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 pt-16 text-center">
-      <div className="animate-fade-in">
-        <p className="font-mono text-sm text-brand-600 dark:text-brand-500 mb-4 tracking-widest uppercase">
-          Hello, world. I&apos;m
-        </p>
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 dark:text-gray-100 mb-6">
-          HE Mengfei
-        </h1>
-        <p className="text-xl md:text-2xl text-gray-500 dark:text-gray-400 max-w-xl mx-auto mb-10 leading-relaxed">
-          Full-stack developer building thoughtful digital experiences.
-        </p>
-        <div className="flex flex-wrap justify-center gap-4">
-          <a
-            href="#projects"
-            className="px-6 py-3 rounded-full bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-sm font-medium hover:opacity-80 transition-opacity"
-          >
-            View Projects
-          </a>
-          <a
-            href="#contact"
-            className="px-6 py-3 rounded-full border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 text-sm font-medium hover:border-gray-500 dark:hover:border-gray-400 transition-colors"
-          >
-            Get in Touch
-          </a>
+    <section className="pt-16 min-h-[90vh] flex items-center bg-gradient-to-br from-gray-50 to-white border-b border-gray-100">
+      <div className="max-w-site mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+        {/* Text */}
+        <div>
+          <p className="text-lab-blue text-xs font-semibold uppercase tracking-widest mb-4">
+            HE Mengfei · University Name
+          </p>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            Research Lab
+          </h1>
+          <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-lg">
+            We investigate fundamental questions at the intersection of
+            [Field A] and [Field B], developing new theories and technologies
+            that shape the future of [domain].
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="#research"
+              className="px-5 py-2.5 bg-lab-blue text-white text-sm font-semibold rounded hover:bg-lab-blue-dark transition-colors"
+            >
+              Our Research
+            </a>
+            <a
+              href="#publications"
+              className="px-5 py-2.5 border border-gray-300 text-gray-700 text-sm font-semibold rounded hover:border-lab-blue hover:text-lab-blue transition-colors"
+            >
+              Publications
+            </a>
+          </div>
         </div>
-      </div>
 
-      {/* Scroll hint */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-gray-400">
-        <svg
-          className="w-5 h-5"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M19 9l-7 7-7-7"
-          />
-        </svg>
+        {/* Hero image placeholder */}
+        <div className="hidden md:flex justify-center">
+          <div className="w-full max-w-sm aspect-[4/3] rounded-xl bg-lab-blue-light border border-lab-blue/20 flex items-center justify-center">
+            <span className="text-5xl">🔬</span>
+          </div>
+        </div>
       </div>
     </section>
   );

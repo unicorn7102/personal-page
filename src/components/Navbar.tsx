@@ -1,81 +1,71 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
+  { label: "Research", href: "#research" },
+  { label: "Members", href: "#members" },
+  { label: "Publications", href: "#publications" },
+  { label: "Gallery", href: "#gallery" },
   { label: "Contact", href: "#contact" },
 ];
 
 export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-950/80 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800">
-      <nav className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a
-          href="#"
-          className="font-mono text-sm font-semibold tracking-tight text-gray-900 dark:text-gray-100"
-        >
-          your.name
+    <header className={`fixed top-0 left-0 right-0 z-50 bg-white transition-shadow ${scrolled ? "shadow-md" : "border-b border-gray-200"}`}>
+      <nav className="max-w-site mx-auto px-6 h-16 flex items-center justify-between">
+        <a href="#" className="flex items-center gap-3">
+          <span className="w-8 h-8 rounded bg-lab-blue flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+            RL
+          </span>
+          <span className="font-bold text-gray-900 text-sm leading-tight">
+            Research Lab
+            <span className="block text-xs font-normal text-gray-400">University Name</span>
+          </span>
         </a>
 
-        {/* Desktop nav */}
         <ul className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a
-                href={link.href}
-                className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
-              >
+              <a href={link.href} className="text-sm text-gray-600 hover:text-lab-blue transition-colors font-medium">
                 {link.label}
               </a>
             </li>
           ))}
         </ul>
 
-        {/* Mobile hamburger */}
         <button
-          className="md:hidden p-2 rounded-md text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100"
+          className="md:hidden p-2 text-gray-600 hover:text-lab-blue"
           onClick={() => setMenuOpen((v) => !v)}
           aria-label="Toggle menu"
         >
-          <svg
-            className="w-5 h-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {menuOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             )}
           </svg>
         </button>
       </nav>
 
-      {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden border-t border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-950">
-          <ul className="max-w-5xl mx-auto px-6 py-4 flex flex-col gap-4">
+        <div className="md:hidden border-t border-gray-100 bg-white">
+          <ul className="max-w-site mx-auto px-6 py-4 flex flex-col gap-4">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+                  className="text-sm text-gray-600 hover:text-lab-blue transition-colors font-medium"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}

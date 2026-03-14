@@ -8,16 +8,20 @@
   }
 
   body {
-    @apply bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100;
+    @apply bg-white text-gray-700;
   }
 }
 
-@layer utilities {
-  .animate-fade-in {
-    animation: fadeIn 0.6s ease-out forwards;
+@layer components {
+  .section-label {
+    @apply text-lab-blue text-xs font-semibold uppercase tracking-widest mb-2;
   }
 
-  .animate-slide-up {
-    animation: slideUp 0.6s ease-out forwards;
+  .section-title {
+    @apply text-3xl font-bold text-gray-900 mb-3;
+  }
+
+  .section-rule {
+    @apply w-10 h-0.5 bg-lab-blue mb-8;
   }
 }
