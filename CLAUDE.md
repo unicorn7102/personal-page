@@ -65,6 +65,10 @@ out/                     # Static build output (gitignored)
 Nav links use hash anchors — sections must have matching `id` attributes:
 `#research`, `#members`, `#publications`, `#gallery`, `#contact`
 
+## Branch Naming Convention
+
+`YYYYMMDD_short_description` — e.g., `20260416_ui_updates`
+
 ## Guidelines
 
 - Read files before editing

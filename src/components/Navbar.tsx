@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 
 const navLinks = [
   { label: "Research", href: "#research" },
-  { label: "Members", href: "#members" },
   { label: "Publications", href: "#publications" },
+  { label: "Members", href: "#members" },
   // { label: "Gallery", href: "#gallery" },
   { label: "Contact", href: "#contact" },
 ];
@@ -25,11 +25,10 @@ export function Navbar() {
       <nav className="max-w-site mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3">
           <span className="w-8 h-8 rounded bg-lab-blue flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
-            RL
+            HE
           </span>
           <span className="font-bold text-gray-900 text-sm leading-tight">
-            Research Lab
-            <span className="block text-xs font-normal text-gray-400">University Name</span>
+            Southern University of Science and Technology
           </span>
         </a>
 

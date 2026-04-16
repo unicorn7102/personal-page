@@ -4,11 +4,8 @@ export function Hero() {
       <div className="max-w-site mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
         {/* Text */}
         <div>
-          <p className="text-lab-blue text-xs font-semibold uppercase tracking-widest mb-4">
-            HE Mengfei · University Name
-          </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Research Lab
+<h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            HE Lab
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-lg">
             Our research is inspired by biomechanical and industrial production
