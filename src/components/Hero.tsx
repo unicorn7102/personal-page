@@ -1,6 +1,9 @@
+import Image from "next/image";
+import heroImg from "../../public/hero.jpg";
+
 export function Hero() {
   return (
-    <section className="pt-16 min-h-[90vh] flex items-center bg-gradient-to-br from-slate-100 to-slate-50 border-b border-slate-200">
+    <section className="pt-16 min-h-[90vh] flex items-center bg-white border-b border-gray-100">
       <div className="max-w-site mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
         {/* Text */}
         <div>
@@ -14,7 +17,7 @@ export function Hero() {
             theory to uncover fundamental principles in complex systems and
             discover new functions and applications.
           </p>
-          <div className="flex flex-wrap gap-4">
+          {/* <div className="flex flex-wrap gap-4">
             <a
               href="#research"
               className="px-5 py-2.5 bg-lab-blue text-white text-sm font-semibold rounded hover:bg-lab-blue-dark transition-colors"
@@ -27,13 +30,18 @@ export function Hero() {
             >
               Publications
             </a>
-          </div>
+          </div> */}
         </div>
 
-        {/* Hero image placeholder */}
+        {/* Hero image */}
         <div className="hidden md:flex justify-center">
-          <div className="w-full max-w-sm aspect-[4/3] rounded-xl bg-lab-blue-light border border-lab-blue/20 flex items-center justify-center">
-            <span className="text-5xl">🔬</span>
+          <div className="w-full max-w-sm aspect-[4/3] rounded-xl overflow-hidden">
+            <Image
+              src={heroImg}
+              alt="Water drop creating ripples — capillarity and fluid dynamics"
+              className="w-full h-full object-cover"
+              priority
+            />
           </div>
         </div>
       </div>

@@ -57,7 +57,7 @@ out/                     # Static build output (gitignored)
 | `lab-blue` | `#0099FF` | Primary brand / CTA buttons |
 | `lab-blue-dark` | `#0077CC` | Hover states |
 | `lab-blue-light` | `#E6F4FF` | Backgrounds, accents |
-| `max-w-site` | `980px` | Page max-width container |
+| `max-w-site` | `1200px` | Page max-width container |
 | `font-sans` | Open Sans | Body text |
 
 ### Section Anchors

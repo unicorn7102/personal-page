@@ -2,7 +2,7 @@ import bowingBear from "../../public/images/bow15.gif";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-20 px-6 bg-slate-50">
+    <section id="contact" className="py-20 px-6 bg-white">
       <div className="max-w-site mx-auto">
 
         {/* Header row: title on left, bear in white space on right */}

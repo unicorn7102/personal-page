@@ -21,7 +21,7 @@ export function Navbar() {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 bg-slate-50 transition-shadow ${scrolled ? "shadow-md" : "border-b border-slate-200"}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 bg-white transition-shadow ${scrolled ? "shadow-md" : "border-b border-gray-200"}`}>
       <nav className="max-w-site mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3">
           <span className="w-8 h-8 rounded-lg bg-lab-blue flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
@@ -58,7 +58,7 @@ export function Navbar() {
       </nav>
 
       {menuOpen && (
-        <div className="md:hidden border-t border-slate-200 bg-slate-50">
+        <div className="md:hidden border-t border-gray-200 bg-white">
           <ul className="max-w-site mx-auto px-6 py-4 flex flex-col gap-4">
             {navLinks.map((link) => (
               <li key={link.href}>
