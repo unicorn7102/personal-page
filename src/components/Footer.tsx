@@ -7,16 +7,6 @@ export function Footer() {
           <p className="font-bold text-white mb-1">HE Lab</p>
           <p>© {year} HE Mengfei. All rights reserved.</p>
         </div>
-        <p className="text-xs">
-          Built with{" "}
-          <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer" className="text-lab-blue hover:underline">
-            Next.js
-          </a>{" "}
-          &{" "}
-          <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" className="text-lab-blue hover:underline">
-            Tailwind CSS
-          </a>
-        </p>
       </div>
     </footer>
   );
