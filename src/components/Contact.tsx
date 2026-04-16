@@ -18,38 +18,24 @@ export function Contact() {
 
         {/* Contact details */}
         <p className="text-gray-600 leading-relaxed mb-8">
-          We welcome inquiries from prospective students, collaborators, and
+          We welcome inquiries from prospective students, postdocs, collaborators, and
           anyone interested in our research. Feel free to reach out!
         </p>
-        <ul className="space-y-5">
+        <ul className="grid sm:grid-cols-2 gap-5">
           <li className="flex gap-4">
-            <span className="w-9 h-9 rounded bg-lab-blue-light flex items-center justify-center text-lab-blue flex-shrink-0">
+            <span className="flex-shrink-0 text-xl">
               ✉️
             </span>
             <div>
-              <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-0.5">Email</p>
               <span className="text-sm text-gray-800">hemf_at_sustech.edu.cn</span>
             </div>
           </li>
           <li className="flex gap-4">
-            <span className="w-9 h-9 rounded bg-lab-blue-light flex items-center justify-center text-lab-blue flex-shrink-0">
+            <span className="flex-shrink-0 text-xl">
               📍
             </span>
             <div>
-              <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-0.5">Location</p>
-              <p className="text-sm text-gray-800">南方科技大学工学院</p>
-            </div>
-          </li>
-          <li className="flex gap-4">
-            <span className="w-9 h-9 rounded bg-lab-blue-light flex items-center justify-center text-lab-blue flex-shrink-0">
-              🎓
-            </span>
-            <div>
-              <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-0.5">Prospective Students</p>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                We are always looking for motivated PhD students and postdocs.
-                Please email with your CV and research interests.
-              </p>
+              <p className="text-sm text-gray-800">南方科技大学工学院北楼</p>
             </div>
           </li>
         </ul>

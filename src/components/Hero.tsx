@@ -35,7 +35,7 @@ export function Hero() {
 
         {/* Hero image */}
         <div className="hidden md:flex justify-center">
-          <div className="w-full max-w-sm aspect-[4/3] rounded-xl overflow-hidden">
+          <div className="w-full max-w-sm aspect-[4/3] overflow-hidden">
             <Image
               src={heroImg}
               alt="Water drop creating ripples — capillarity and fluid dynamics"

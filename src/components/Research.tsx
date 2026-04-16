@@ -37,9 +37,9 @@ export function Research() {
           {areas.map((area) => (
             <div
               key={area.title}
-              className="p-6 border border-gray-200 rounded-lg hover:border-lab-blue hover:shadow-sm transition-all group"
+              className="p-6 border-2 border-gray-400 hover:border-lab-blue hover:shadow-sm transition-all group"
             >
-              <span className="text-3xl mb-4 block">{area.icon}</span>
+
               <h3 className="font-bold text-gray-900 mb-2 group-hover:text-lab-blue transition-colors text-sm">
                 {area.title}
               </h3>

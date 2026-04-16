@@ -77,13 +77,13 @@ export function Publications() {
                 href={pub.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-shrink-0 w-36 h-24 rounded overflow-hidden border border-gray-200 group-hover:border-lab-blue transition-colors block"
+                className="flex-shrink-0 w-44 h-28 overflow-hidden border border-gray-200 group-hover:border-lab-blue transition-colors block"
               >
                 <Image
                   src={pub.image}
                   alt={pub.title}
-                  width={144}
-                  height={96}
+                  width={176}
+                  height={112}
                   className="w-full h-full object-cover"
                 />
               </a>

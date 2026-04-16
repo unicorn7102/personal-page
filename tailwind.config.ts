@@ -17,7 +17,7 @@ const config: Config = {
         sans: ["Open Sans", "system-ui", "sans-serif"],
       },
       maxWidth: {
-        site: "800px",
+        site: "500px",
       },
     },
   },

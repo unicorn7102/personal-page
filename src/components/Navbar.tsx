@@ -21,13 +21,13 @@ export function Navbar() {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 bg-white transition-shadow ${scrolled ? "shadow-md" : "border-b border-gray-200"}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 bg-gray-900 transition-shadow ${scrolled ? "shadow-md" : "border-b border-gray-700"}`}>
       <nav className="max-w-site mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3">
           <span className="w-8 h-8 rounded-lg bg-lab-blue flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
             HE
           </span>
-          <span className="font-bold text-gray-900 text-sm leading-tight">
+          <span className="font-bold text-white text-sm leading-tight">
             Southern University of Science and Technology
           </span>
         </a>
@@ -35,7 +35,7 @@ export function Navbar() {
         <ul className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a href={link.href} className="text-sm text-gray-600 hover:text-lab-blue transition-colors font-medium">
+              <a href={link.href} className="text-sm text-gray-400 hover:text-white transition-colors font-medium">
                 {link.label}
               </a>
             </li>
@@ -43,7 +43,7 @@ export function Navbar() {
         </ul>
 
         <button
-          className="md:hidden p-2 text-gray-600 hover:text-lab-blue"
+          className="md:hidden p-2 text-gray-400 hover:text-white"
           onClick={() => setMenuOpen((v) => !v)}
           aria-label="Toggle menu"
         >
@@ -58,13 +58,13 @@ export function Navbar() {
       </nav>
 
       {menuOpen && (
-        <div className="md:hidden border-t border-gray-200 bg-white">
+        <div className="md:hidden border-t border-gray-700 bg-gray-900">
           <ul className="max-w-site mx-auto px-6 py-4 flex flex-col gap-4">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="text-sm text-gray-600 hover:text-lab-blue transition-colors font-medium"
+                  className="text-sm text-gray-400 hover:text-white transition-colors font-medium"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}
