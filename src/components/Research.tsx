@@ -27,7 +27,7 @@ const areas = [
 
 export function Research() {
   return (
-    <section id="research" className="py-20 px-6 bg-white">
+    <section id="research" className="py-20 px-6 bg-white border-b border-slate-100">
       <div className="max-w-site mx-auto">
         <p className="section-label">What We Do</p>
         <h2 className="section-title">Research</h2>

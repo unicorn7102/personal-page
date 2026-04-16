@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <section className="pt-16 min-h-[90vh] flex items-center bg-gradient-to-br from-gray-50 to-white border-b border-gray-100">
+    <section className="pt-16 min-h-[90vh] flex items-center bg-gradient-to-br from-slate-100 to-slate-50 border-b border-slate-200">
       <div className="max-w-site mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
         {/* Text */}
         <div>

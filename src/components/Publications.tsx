@@ -63,7 +63,7 @@ const publications: Publication[] = [
 
 export function Publications() {
   return (
-    <section id="publications" className="py-20 px-6 bg-white">
+    <section id="publications" className="py-20 px-6 bg-slate-50 border-b border-slate-100">
       <div className="max-w-site mx-auto">
         <p className="section-label">Academic Output</p>
         <h2 className="section-title">Publications</h2>
