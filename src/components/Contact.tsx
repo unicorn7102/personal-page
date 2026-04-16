@@ -1,14 +1,31 @@
+import bowingFemale from "../../public/images/bow13.gif";
+import bowingMale from "../../public/images/bow14.gif";
+
 export function Contact() {
   return (
     <section id="contact" className="py-20 px-6 bg-white">
       <div className="max-w-site mx-auto">
-        <p className="section-label">Get In Touch</p>
-        <h2 className="section-title">Contact</h2>
-        <div className="section-rule" />
 
-        <div className="grid md:grid-cols-2 gap-12">
-          {/* Info */}
+        {/* Header row: title on left, man in blue on right */}
+        <div className="flex items-end justify-between pr-72">
           <div>
+            <p className="section-label">Get In Touch</p>
+            <h2 className="section-title">Contact</h2>
+            <div className="section-rule" />
+          </div>
+          <div className="pb-2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={bowingMale.src} width={bowingMale.width} height={bowingMale.height} alt="" />
+          </div>
+        </div>
+
+        {/* Content row: woman in pink on left, contact info on right */}
+        <div className="mt-8 flex gap-8 items-start">
+          <div className="flex-shrink-0 pt-2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={bowingFemale.src} width={bowingFemale.width} height={bowingFemale.height} alt="" />
+          </div>
+          <div className="flex-1">
             <p className="text-gray-600 leading-relaxed mb-8">
               We welcome inquiries from prospective students, collaborators, and
               anyone interested in our research. Feel free to reach out!
@@ -20,9 +37,7 @@ export function Contact() {
                 </span>
                 <div>
                   <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-0.5">Email</p>
-                  <a href="mailto:lab@university.edu" className="text-sm text-gray-800 hover:text-lab-blue transition-colors">
-                    lab@university.edu
-                  </a>
+                  <span className="text-sm text-gray-800">hemf_at_sustech.edu.cn</span>
                 </div>
               </li>
               <li className="flex gap-4">
@@ -31,11 +46,7 @@ export function Contact() {
                 </span>
                 <div>
                   <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-0.5">Location</p>
-                  <p className="text-sm text-gray-800">
-                    Building Name, Room 000<br />
-                    University Name<br />
-                    City, Country
-                  </p>
+                  <p className="text-sm text-gray-800">南方科技大学工学院</p>
                 </div>
               </li>
               <li className="flex gap-4">
@@ -52,30 +63,8 @@ export function Contact() {
               </li>
             </ul>
           </div>
-
-          {/* Social / links */}
-          <div className="flex flex-col justify-start gap-4">
-            <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Find Us Online</h3>
-            {[
-              { label: "Google Scholar", href: "#", icon: "📚" },
-              { label: "GitHub", href: "#", icon: "💻" },
-              { label: "Twitter / X", href: "#", icon: "🐦" },
-              { label: "Lab Newsletter", href: "#", icon: "📰" },
-            ].map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 px-4 py-3 border border-gray-200 rounded-lg text-sm text-gray-700 hover:border-lab-blue hover:text-lab-blue transition-colors group"
-              >
-                <span>{link.icon}</span>
-                {link.label}
-                <span className="ml-auto text-gray-300 group-hover:text-lab-blue transition-colors">→</span>
-              </a>
-            ))}
-          </div>
         </div>
+
       </div>
     </section>
   );

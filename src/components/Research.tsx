@@ -1,27 +1,27 @@
 const areas = [
   {
-    icon: "⚗️",
-    title: "Research Area One",
+    icon: "💧",
+    title: "Capillarity, Droplets & High-Speed Wetting",
     description:
-      "A brief description of this research area, covering the key questions being investigated and the methods used.",
+      "Investigating capillary-driven phenomena, droplet dynamics, and the physics of rapid wetting processes at fluid–solid interfaces.",
   },
   {
-    icon: "🧬",
-    title: "Research Area Two",
+    icon: "🪶",
+    title: "Elasticity of Thin Shells & Ultrathin Films",
     description:
-      "A brief description of this research area, highlighting the novel approaches and expected outcomes.",
+      "Studying the mechanical behavior of thin elastic shells and ultrathin membranes, including buckling, wrinkling, and shape selection.",
   },
   {
-    icon: "💡",
-    title: "Research Area Three",
+    icon: "🩺",
+    title: "Fluid–Structure Instabilities in Physiological Flows",
     description:
-      "A brief description of this research area, explaining the broader impact and applications of the work.",
+      "Exploring flow-induced elastic instabilities in internal physiological flows, with implications for biological and biomedical systems.",
   },
   {
-    icon: "🌐",
-    title: "Research Area Four",
+    icon: "🌊",
+    title: "Other Fluid & Elastic Phenomena",
     description:
-      "A brief description of this research area, detailing the interdisciplinary connections and collaborations.",
+      "Broader investigations into fluid mechanics and elasticity, including pattern formation, complex instabilities, and coupled phenomena.",
   },
 ];
 
@@ -32,12 +32,6 @@ export function Research() {
         <p className="section-label">What We Do</p>
         <h2 className="section-title">Research</h2>
         <div className="section-rule" />
-
-        <p className="text-gray-600 leading-relaxed max-w-2xl mb-12">
-          Our lab focuses on cutting-edge research across several interconnected
-          areas. We combine theoretical foundations with experimental validation
-          to address fundamental and applied challenges.
-        </p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {areas.map((area) => (
