@@ -9,9 +9,8 @@ type Member = {
 const pi: Member = {
   name: "HE Mengfei",
   role: "Principal Investigator",
-  bio: "Prof. HE Mengfei leads the lab. Her research focuses on [research interests]. She received her PhD from [university] and joined [university] in [year].",
-  email: "mengfei@university.edu",
-  website: "#",
+  bio: "",
+  email: "hemf_at_sustech.edu.cn",
 };
 
 const members: Member[] = [
@@ -19,24 +18,25 @@ const members: Member[] = [
     name: "PhD Student One",
     role: "PhD Student",
     bio: "Working on [topic]. BSc from [university], [year].",
-    email: "student1@university.edu",
+    email: "xxx_at_sustech.edu.cn",
   },
   {
     name: "PhD Student Two",
     role: "PhD Student",
     bio: "Working on [topic]. MSc from [university], [year].",
-    email: "student2@university.edu",
+    email: "xxx_at_sustech.edu.cn",
   },
   {
     name: "Postdoc Researcher",
     role: "Postdoctoral Researcher",
     bio: "Research focus: [topic]. PhD from [university], [year].",
-    email: "postdoc@university.edu",
+    email: "xxx_at_sustech.edu.cn",
   },
   {
     name: "Visiting Researcher",
     role: "Visiting Scholar",
     bio: "Visiting from [institution]. Working on [topic].",
+    email: "xxx_at_sustech.edu.cn",
   },
 ];
 
@@ -53,19 +53,17 @@ function Avatar({ name }: { name: string }) {
   );
 }
 
-function MemberCard({ member, large = false }: { member: Member; large?: boolean }) {
+function MemberCard({ member }: { member: Member }) {
   return (
-    <div className={`flex gap-5 p-5 border border-gray-200 rounded-lg hover:border-lab-blue hover:shadow-sm transition-all ${large ? "md:col-span-2" : ""}`}>
+    <div className="flex gap-5 p-5 border border-gray-200 rounded-lg hover:border-lab-blue hover:shadow-sm transition-all">
       <Avatar name={member.name} />
       <div className="min-w-0">
         <h3 className="font-bold text-gray-900 text-sm">{member.name}</h3>
         <p className="text-lab-blue text-xs font-semibold mb-2">{member.role}</p>
-        <p className="text-gray-500 text-xs leading-relaxed mb-2">{member.bio}</p>
-        <div className="flex gap-3">
+        {member.bio && <p className="text-gray-500 text-xs leading-relaxed mb-2">{member.bio}</p>}
+        <div className="flex flex-col gap-1">
           {member.email && (
-            <a href={`mailto:${member.email}`} className="text-xs text-gray-400 hover:text-lab-blue transition-colors">
-              Email
-            </a>
+            <span className="text-xs text-gray-400">{member.email}</span>
           )}
           {member.website && (
             <a href={member.website} className="text-xs text-gray-400 hover:text-lab-blue transition-colors">
@@ -86,19 +84,8 @@ export function Members() {
         <h2 className="section-title">Members</h2>
         <div className="section-rule" />
 
-        {/* PI */}
-        <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">
-          Principal Investigator
-        </h3>
-        <div className="mb-10">
-          <MemberCard member={pi} large />
-        </div>
-
-        {/* Rest of team */}
-        <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">
-          Lab Members
-        </h3>
         <div className="grid sm:grid-cols-2 gap-4">
+          <MemberCard member={pi} />
           {members.map((m) => (
             <MemberCard key={m.name} member={m} />
           ))}

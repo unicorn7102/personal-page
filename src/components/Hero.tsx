@@ -11,9 +11,11 @@ export function Hero() {
             Research Lab
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-lg">
-            We investigate fundamental questions at the intersection of
-            [Field A] and [Field B], developing new theories and technologies
-            that shape the future of [domain].
+            Our research is inspired by biomechanical and industrial production
+            problems, focusing on fluid instabilities, complex pattern formation,
+            and the elasticity of slender structures. We combine experiments with
+            theory to uncover fundamental principles in complex systems and
+            discover new functions and applications.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
