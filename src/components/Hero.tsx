@@ -3,14 +3,14 @@ import heroImg from "../../public/hero.jpg";
 
 export function Hero() {
   return (
-    <section className="pt-16 min-h-[90vh] flex items-center bg-white border-b border-gray-100">
-      <div className="max-w-site mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+    <section className="pt-16 flex items-center bg-white border-b border-gray-100">
+      <div className="max-w-site mx-auto px-6 py-8 grid md:grid-cols-2 gap-6 items-center">
         {/* Text */}
         <div>
-<h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+<h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
             HE Lab
           </h1>
-          <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-lg">
+          <p className="text-lg text-gray-600 leading-relaxed mb-0 max-w-lg">
             Our research is inspired by biomechanical and industrial production
             problems, focusing on fluid instabilities, complex pattern formation,
             and the elasticity of slender structures. We combine experiments with

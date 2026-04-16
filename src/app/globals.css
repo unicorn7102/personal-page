@@ -5,7 +5,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    font-size: 24px;
+    font-size: 22px;
   }
 
   body {
@@ -15,14 +15,14 @@
 
 @layer components {
   .section-label {
-    @apply text-lab-blue text-xs font-semibold uppercase tracking-widest mb-2;
+    @apply text-lab-blue text-xs font-semibold uppercase tracking-widest mb-1;
   }
 
   .section-title {
-    @apply text-3xl font-bold text-gray-900 mb-3;
+    @apply text-3xl font-bold text-gray-900 mb-2;
   }
 
   .section-rule {
-    @apply w-10 h-0.5 bg-lab-blue mb-8;
+    @apply w-10 h-0.5 bg-lab-blue mb-4;
   }
 }

@@ -78,7 +78,7 @@ function MemberCard({ member }: { member: Member }) {
 
 export function Members() {
   return (
-    <section id="members" className="py-20 px-6 bg-white border-b border-gray-100">
+    <section id="members" className="py-8 px-6 bg-white border-b border-gray-100">
       <div className="max-w-site mx-auto">
         <p className="section-label">The Team</p>
         <h2 className="section-title">Members</h2>

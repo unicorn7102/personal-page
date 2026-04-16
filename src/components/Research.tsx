@@ -27,17 +27,17 @@ const areas = [
 
 export function Research() {
   return (
-    <section id="research" className="py-20 px-6 bg-white border-b border-gray-100">
+    <section id="research" className="py-8 px-6 bg-white border-b border-gray-100">
       <div className="max-w-site mx-auto">
         <p className="section-label">What We Do</p>
         <h2 className="section-title">Research</h2>
         <div className="section-rule" />
 
-        <div className="grid sm:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 gap-4">
           {areas.map((area) => (
             <div
               key={area.title}
-              className="p-6 border-2 border-gray-400 hover:border-lab-blue hover:shadow-sm transition-all group"
+              className="p-4 border-2 border-gray-400 hover:border-lab-blue hover:shadow-sm transition-all group"
             >
 
               <h3 className="font-bold text-gray-900 mb-2 group-hover:text-lab-blue transition-colors text-sm">

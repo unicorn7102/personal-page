@@ -2,7 +2,7 @@ import bowingBear from "../../public/images/bow15.gif";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-20 px-6 bg-white">
+    <section id="contact" className="py-8 px-6 bg-white">
       <div className="max-w-site mx-auto">
 
         {/* Header row: title on left, bear in white space on right */}
@@ -13,11 +13,11 @@ export function Contact() {
             <div className="section-rule" />
           </div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={bowingBear.src} width={90} height={90} alt="" className="flex-shrink-0" />
+          <img src={bowingBear.src} width={70} height={70} alt="" className="flex-shrink-0" />
         </div>
 
         {/* Contact details */}
-        <p className="text-gray-600 leading-relaxed mb-8">
+        <p className="text-gray-600 leading-relaxed mb-4">
           We welcome inquiries from prospective students, postdocs, collaborators, and
           anyone interested in our research. Feel free to reach out!
         </p>

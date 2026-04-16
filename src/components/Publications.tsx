@@ -63,13 +63,13 @@ const publications: Publication[] = [
 
 export function Publications() {
   return (
-    <section id="publications" className="py-20 px-6 bg-white border-b border-gray-100">
+    <section id="publications" className="py-8 px-6 bg-white border-b border-gray-100">
       <div className="max-w-site mx-auto">
         <p className="section-label">Academic Output</p>
         <h2 className="section-title">Publications</h2>
         <div className="section-rule" />
 
-        <ol className="space-y-6">
+        <ol className="space-y-4">
           {publications.map((pub, i) => (
             <li key={i} className="group flex gap-5 items-start">
               {/* Thumbnail */}
