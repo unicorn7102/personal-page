@@ -63,13 +63,13 @@ const publications: Publication[] = [
 
 export function Publications() {
   return (
-    <section id="publications" className="py-20 px-6 bg-white">
+    <section id="publications" className="py-8 px-6 bg-white border-b border-gray-100">
       <div className="max-w-site mx-auto">
         <p className="section-label">Academic Output</p>
         <h2 className="section-title">Publications</h2>
         <div className="section-rule" />
 
-        <ol className="space-y-6">
+        <ol className="space-y-4">
           {publications.map((pub, i) => (
             <li key={i} className="group flex gap-5 items-start">
               {/* Thumbnail */}
@@ -77,13 +77,13 @@ export function Publications() {
                 href={pub.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-shrink-0 w-36 h-24 rounded overflow-hidden border border-gray-200 group-hover:border-lab-blue transition-colors block"
+                className="flex-shrink-0 w-44 h-28 overflow-hidden border border-gray-200 group-hover:border-lab-blue transition-colors block"
               >
                 <Image
                   src={pub.image}
                   alt={pub.title}
-                  width={144}
-                  height={96}
+                  width={176}
+                  height={112}
                   className="w-full h-full object-cover"
                 />
               </a>

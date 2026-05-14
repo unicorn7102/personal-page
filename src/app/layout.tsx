@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "HE Mengfei Research Lab",
-  description: "Research lab of HE Mengfei at University Name.",
+  title: "HE Lab",
+  description: "Research lab of HE Mengfei at Southern University of Science and Technology.",
   openGraph: {
-    title: "HE Mengfei Research Lab",
-    description: "Research lab of HE Mengfei at University Name.",
+    title: "HE Lab",
+    description: "Research lab of HE Mengfei at Southern University of Science and Technology.",
     type: "website",
   },
 };
